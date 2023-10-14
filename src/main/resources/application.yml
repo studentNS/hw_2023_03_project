@@ -1,0 +1,23 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  flyway:
+    url: jdbc:postgresql://localhost:5432/db
+    user: postgres
+    password: postgres
+
+bot:
+  name: first_search_bot
+  token: ***
+
+yandex:
+  map: https://search-maps.yandex.ru/v1/?text=cafe&type=biz&lang=ru_RU&apikey=***&results=10&ll=lan,lon
+
+kafka:
+  topic: "user-action"
